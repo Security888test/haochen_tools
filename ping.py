@@ -17,12 +17,11 @@ def ping_ip(ip):
 
 i=0
 while(True):
-    ip = '192.168.1.'+str(i)
+    ip = '10.163.60.'+str(i)
     t = threading.Thread(target=ping_ip,args=(ip,))    # 创建多线程，使用ping_ip函数，传入ip作为参数
     t.start()
     i+=1
     if i==256:
         break
-print("共扫描到存活"+str(num)+"台主机") 
     
         

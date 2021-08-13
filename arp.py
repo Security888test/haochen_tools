@@ -9,8 +9,8 @@ def main():
     # 获取当前IP并设置默认网卡
     hostname = socket.gethostname()
     ipaddr = socket.gethostbyname(hostname)
-    wifi="Realtek USB FE Family Controller #4"
-    wifi_in = input("[*]输入你选择的网卡名称(默认为Realtek USB FE Family Controller #4):")
+    wifi="Corechip SR9900 USB2.0 to Fast Ethernet Adapter #2"
+    wifi_in = input("[*]输入你选择的网卡名称(默认为Corechip SR9900 USB2.0 to Fast Ethernet Adapter #2):")
     ip_num = input("[*]请输入扫描的IP段(默认为"+ipaddr+"/24):")
     
     # 判断用户输入的IP以及网卡
