@@ -1,9 +1,12 @@
-import re
+import sys
 import os
 
-path = input("请输入日志所在目录路径：")
+path = str(sys.argv[1])
+find = str(sys.argv[2])
+print(path+'+++'+find)
+#path = input("请输入日志所在目录路径：")
 #path = 'D:\work\恒睿达\www\日志'
-find = input("请输入查找的内容：")
+#find = input("请输入查找的内容：")
 get_dir = os.listdir(path)
 wp=open(path+'\\'+'find.txt',"w")
 for i in get_dir:
